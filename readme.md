@@ -18,7 +18,7 @@ button1.onMouseDown ->
 
 ### What?
 
-The Dump snippit modifies Framer's import so that: 
+The Dump snippet modifies Framer's import so that: 
 
 - Variables are created for imported layers based on their layer names.
 - Imported layers have properties that correspond to their sub layers' names.
