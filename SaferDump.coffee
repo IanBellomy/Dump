@@ -1,8 +1,6 @@
 plugin.run = (contents, options) ->
 	"""	
-#{contents}
 # Start Dump
-# Place this at the beginning of your file.
 Dump = (obj)->		
 	if obj instanceof Framer.Layer	
 		for child in obj.children
@@ -22,4 +20,6 @@ Dump = (obj)->
 oldLoad = Framer.Importer.load
 Framer.Importer.load = (path) => Dump(oldLoad(path))
 # End Dump
+
+#{contents}
 """
