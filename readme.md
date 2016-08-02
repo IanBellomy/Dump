@@ -39,5 +39,3 @@ A: Yes.
 Place `Dump.coffee` and/or `SaferDump.coffee` in your snippets folder. 
 
 You can find your snippets folder in Framer by clicking 'Snippets > Show Snippets Folder'
-
-When you use the Dump or SaferDump snippet, make sure to place the code at the top of your file. 
