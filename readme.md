@@ -1,0 +1,56 @@
+# Dump
+
+### Purpose
+
+Why write:
+
+````coffeescript
+psd = Framer.Importer.load("imported/Document@1x")
+psd.button1.onMouseDown ->
+	@childrenWithName["assets"][0].childrenWithName["label"][0].animate . . .
+````
+
+When you could write:
+
+````coffeescript
+Framer.Importer.load("imported/Document@1x")
+button1.onMouseDown ->
+	@assets.label.animate . . .
+````
+
+### What?
+
+The Dump snippit modifies Framer's import so that: 
+
+- Variables are created for imported layers based on their layer names.
+- Imported layers have properties that correspond to their sub layers' names.
+
+
+### What?!
+
+Q: "Couldn't this overwrite layer properties and methods?"
+A: Yes.
+
+- Don't name your layer groups "x", "width", "Framer", "states", "animate", etc. 
+- SaferDump.coffee will alert you when something is overwritten. Fixing the imported document is easy.
+- We're bashing out prototypes, not writing production code.
+
+
+Q: "What about layer groups with siblings that have the same name?"
+e.g.
+	-buttonContainer
+		-label
+		-img
+		-img
+
+A: Don't do that.
+
+
+
+### Installation
+
+Place `Dump.coffee` and/or `SaferDump.coffee` in your snippits folder. 
+
+You can find your snippits folder in Framer by clicking 'Snippits > Show Snippits Folder'
+
+When you use the Dump or SaferDump snippit, make sure to place it at the top of your file. 
