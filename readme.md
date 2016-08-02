@@ -36,8 +36,8 @@ A: Yes.
 
 ### Installation
 
-Place `Dump.coffee` and/or `SaferDump.coffee` in your snippits folder. 
+Place `Dump.coffee` and/or `SaferDump.coffee` in your snippets folder. 
 
-You can find your snippits folder in Framer by clicking 'Snippits > Show Snippits Folder'
+You can find your snippets folder in Framer by clicking 'Snippets > Show Snippets Folder'
 
-When you use the Dump or SaferDump snippit, make sure to place it at the top of your file. 
+When you use the Dump or SaferDump snippit, make sure to place the code at the top of your file. 
