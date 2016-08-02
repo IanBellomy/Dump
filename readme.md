@@ -5,7 +5,7 @@ Why write:
 ````coffeescript
 psd = Framer.Importer.load("imported/Document@1x")
 psd.button1.onMouseDown ->
-	@childrenWithName["assets"][0].childrenWithName["label"][0].animate . . .
+	@childrenWithName("assets")[0].childrenWithName("label")[0].animate . . .
 ````
 
 When you could write:
