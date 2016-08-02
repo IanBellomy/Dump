@@ -1,7 +1,5 @@
 # Dump
 
-### Purpose
-
 Why write:
 
 ````coffeescript
@@ -25,25 +23,14 @@ The Dump snippit modifies Framer's import so that:
 - Variables are created for imported layers based on their layer names.
 - Imported layers have properties that correspond to their sub layers' names.
 
-
-### What?!
-
 Q: "Couldn't this overwrite layer properties and methods?"
+
 A: Yes.
 
 - Don't name your layer groups "x", "width", "Framer", "states", "animate", etc. 
 - SaferDump.coffee will alert you when something is overwritten. Fixing the imported document is easy.
 - We're bashing out prototypes, not writing production code.
 
-
-Q: "What about layer groups with siblings that have the same name?"
-e.g.
-	-buttonContainer
-		-label
-		-img
-		-img
-
-A: Don't do that.
 
 
 
