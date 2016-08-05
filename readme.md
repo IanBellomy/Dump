@@ -1,6 +1,5 @@
 # Dump
 
-## Example
 <img src="https://raw.githubusercontent.com/IanBellomy/Dump/master/example.png" width=582 height=374>
 [Video Example.](https://vimeo.com/177741747)
 
