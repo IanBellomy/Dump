@@ -18,8 +18,8 @@ Q: "Couldn't this overwrite layer properties and methods?"
 A: Yes.
 
 - Don't name your layer groups "x", "width", "Framer", "states", "animate", etc. 
-- SaferDump.coffee will alert you when something is overwritten. Fixing the imported document is easy.
-- We're bashing out prototypes, not writing production code.
+- If you're anxious, use SaferDump.coffee . It will alert you when something is overwritten. 
+- Don't sweat. We're bashing out prototypes, not writing production code. It's also easy to fix problems by renaming groups in your imported file and re-importing. 
 
 
 
