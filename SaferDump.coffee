@@ -1,6 +1,7 @@
 plugin.run = (contents, options) ->
 	"""	
-# Start Dump
+<fold>
+# Dump: Framer.Importer Modification
 Dump = (obj)->		
 	if obj instanceof Framer.Layer	
 		for child in obj.children
@@ -19,7 +20,7 @@ Dump = (obj)->
 	return obj
 oldLoad = Framer.Importer.load
 Framer.Importer.load = (path) => Dump(oldLoad(path))
-# End Dump
+</fold>
 
 #{contents}
 """
