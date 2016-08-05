@@ -1,27 +1,13 @@
 # Dump
 
 ## Example
+<img src="https://raw.githubusercontent.com/IanBellomy/Dump/master/example.png" width=582 height=374>
+[Video Example.](https://vimeo.com/177741747)
 
-[Video of use.](https://vimeo.com/177741747)
-
-## Info
-Why write:
-
-````coffeescript
-psd = Framer.Importer.load("imported/Document@1x")
-psd.button1.onMouseDown ->
-	@childrenWithName("assets")[0].childrenWithName("label")[0].animate . . .
-````
-
-When you could write:
-
-````coffeescript
-Framer.Importer.load("imported/Document@1x")
-button1.onMouseDown ->
-	@assets.label.animate . . .
-````
 
 ### What?
+
+Framer's default import is safe but the results are cumbersome to work with. 
 
 The Dump snippet modifies Framer's import so that: 
 
