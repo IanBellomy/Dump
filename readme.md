@@ -16,8 +16,9 @@ The Dump snippet modifies Framer's import so that:
 
 ---
 
-Q: *"Couldn't this overwrite layer properties and methods?!"*
-A: Yes.
+**Q:** *"Couldn't this overwrite layer properties and methods?!"*
+
+**A:** Yes.
 
 - Don't name your layer groups "x", "width", "Framer", "states", "animate", etc. 
 - If you're anxious, use SaferDump.coffee . It will alert you when something is overwritten. 
