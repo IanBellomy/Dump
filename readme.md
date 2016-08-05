@@ -1,6 +1,7 @@
 # Dump
 
 <img src="https://raw.githubusercontent.com/IanBellomy/Dump/master/example.png" width=582 height=374>
+
 [Video Example.](https://vimeo.com/177741747)
 
 
@@ -13,8 +14,9 @@ The Dump snippet modifies Framer's import so that:
 - Variables are created for imported layers based on their layer names.
 - Imported layers have properties that correspond to their sub layers' names.
 
-Q: "Couldn't this overwrite layer properties and methods?"
+---
 
+Q: *"Couldn't this overwrite layer properties and methods?!"*
 A: Yes.
 
 - Don't name your layer groups "x", "width", "Framer", "states", "animate", etc. 
