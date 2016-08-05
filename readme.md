@@ -1,5 +1,10 @@
 # Dump
 
+## Example
+
+[Video of use.](https://vimeo.com/177741747)
+
+## Info
 Why write:
 
 ````coffeescript
